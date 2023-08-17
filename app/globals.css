@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :where(*) {
+    @apply antialiased;
+  }
+  :where(html, body, #__next) {
+    @apply h-full;
+  }
+  :where(button, nav *) {
+    @apply select-none;
+  }
+
+  /** OVERRIDES TAILWIND PREFLIGHT */
+  button,
+  button * {
+    @apply leading-none;
+  }
+
+  button,
+  select {
+    text-transform: inherit;
+    letter-spacing: inherit;
+  }
+}
