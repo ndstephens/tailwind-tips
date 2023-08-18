@@ -43,7 +43,7 @@ export default function Home() {
         </Link>
       </li>
       <li>
-        <Link href="/addingvariants">Adding Variants</Link>
+        <Link href="/custommodifiers">Custom Modifiers</Link>
       </li>
       <li>
         <Link href="https://tailwindcss.com/docs/customizing-colors#aliasing-color-names">
