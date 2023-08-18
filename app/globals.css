@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /** RESET */
   :where(*) {
     @apply antialiased;
   }
@@ -13,7 +14,7 @@
     @apply select-none;
   }
 
-  /** OVERRIDES TAILWIND PREFLIGHT */
+  /** TAILWIND PREFLIGHT OVERRIDES */
   button,
   button * {
     @apply leading-none;
@@ -23,5 +24,37 @@
   select {
     text-transform: inherit;
     letter-spacing: inherit;
+  }
+
+  /** CUSTOM */
+  * {
+    @apply focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-current;
+  }
+  body {
+    @apply bg-gray-800 text-xl text-gray-200;
+  }
+  :is(h1, h2, h3, h4, h5, h6) {
+    @apply font-semibold text-gray-50;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply mb-8 text-3xl;
+  }
+  :is(ul, ol) {
+    @apply list-inside space-y-3 pl-4;
+  }
+  ol {
+    @apply list-decimal marker:text-lg;
+  }
+  ul {
+    @apply list-disc;
+  }
+  a {
+    @apply rounded border-b-2 border-transparent p-0.5 text-fuchsia-300 transition-colors hocusv:border-current;
+  }
+  code {
+    @apply rounded bg-gray-600 px-1;
   }
 }
