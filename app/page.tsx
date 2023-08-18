@@ -9,6 +9,9 @@ export default function Home() {
       <li>
         <Link href="/preflight">Preflight</Link>
       </li>
+      <li>
+        <Link href="/newfeatures">New Features</Link>
+      </li>
     </ol>
   );
 }
