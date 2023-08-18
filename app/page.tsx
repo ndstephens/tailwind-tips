@@ -12,6 +12,44 @@ export default function Home() {
       <li>
         <Link href="/newfeatures">New Features</Link>
       </li>
+      <li>
+        <Link href="https://www.natestephens.dev/dynamic-class-names-in-tailwind">
+          Dynamic Class Names
+        </Link>
+      </li>
+      <li>
+        <Link href="https://www.natestephens.dev/create-your-own-custom-classes">
+          Create Custom Classes
+        </Link>
+      </li>
+      <li>
+        <Link href="https://www.natestephens.dev/access-theme-in-arbitrary-values">
+          Access the Theme in Arbitrary Values
+        </Link>
+      </li>
+      <li>
+        <Link href="https://www.natestephens.dev/whitespace-in-arbitrary-values">
+          Whitespace in Arbitrary Values
+        </Link>
+      </li>
+      <li>
+        <Link href="https://www.natestephens.dev/child-selector-as-arbitrary-modifier">
+          Child Selectors
+        </Link>
+      </li>
+      <li>
+        <Link href="https://www.natestephens.dev/adding-more-aria-modifiers-to-theme">
+          Add More ARIA Modifiers
+        </Link>
+      </li>
+      <li>
+        <Link href="/addingvariants">Adding Variants</Link>
+      </li>
+      <li>
+        <Link href="https://tailwindcss.com/docs/customizing-colors#aliasing-color-names">
+          Aliasing Color Names
+        </Link>
+      </li>
     </ol>
   );
 }
