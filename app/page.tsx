@@ -50,6 +50,9 @@ export default function Home() {
           Aliasing Color Names
         </Link>
       </li>
+      <li>
+        <Link href="/usingcssvariables">Using CSS Variables with Opacity</Link>
+      </li>
     </ol>
   );
 }
