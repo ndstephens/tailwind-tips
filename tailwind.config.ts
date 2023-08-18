@@ -17,6 +17,7 @@ const config: Config = {
     colors: {
       ...colors,
       gray: colors.slate,
+      primary: colors.fuchsia,
     },
     screens: {
       xs: '480px',
