@@ -53,6 +53,11 @@ export default function Home() {
       <li>
         <Link href="/usingcssvariables">Using CSS Variables with Opacity</Link>
       </li>
+      <li>
+        <Link href="/convertthemecolorstovars">
+          Convert Theme Colors to Global CSS Variables
+        </Link>
+      </li>
     </ol>
   );
 }

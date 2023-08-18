@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss';
 import defaultTheme from 'tailwindcss/defaultTheme';
 import colors from 'tailwindcss/colors';
 import plugin from 'tailwindcss/plugin';
-// import { addTailwindColorVariables } from './lib/utils/tailwindColorVars';
+import { addTailwindColorVariables } from './lib/utils/tailwindColorVars';
 
 const config: Config = {
   content: [
@@ -22,6 +22,7 @@ const config: Config = {
       black: colors.black,
       gray: colors.slate,
       primary: colors.fuchsia,
+      coffee: '#c0ffee',
     },
     screens: {
       xs: '480px',
@@ -34,7 +35,7 @@ const config: Config = {
     },
   },
   plugins: [
-    // addTailwindColorVariables,
+    addTailwindColorVariables,
     plugin(function ({ addUtilities, addVariant }) {
       addVariant('hocusv', ['&:hover', '&:focus-visible']);
       addVariant('group-hocusv', [
