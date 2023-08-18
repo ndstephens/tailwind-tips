@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import { type PropsWithChildren } from 'react';
 import { Inter } from 'next/font/google';
 
@@ -15,7 +15,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body className={`${sans.variable} font-sans`}>{children}</body>
+      <body className={`${sans.variable} font-sans`}>
+        <div className="m-auto flex max-w-4xl flex-col gap-y-16 px-10 py-32">
+          <h1>Tailwind Tips & Tricks</h1>
+          <main>{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
