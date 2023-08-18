@@ -15,7 +15,11 @@ const config: Config = {
   },
   theme: {
     colors: {
-      ...colors,
+      // ...colors,
+      transparent: 'transparent',
+      current: 'currentColor',
+      white: colors.white,
+      black: colors.black,
       gray: colors.slate,
       primary: colors.fuchsia,
     },
@@ -32,15 +36,6 @@ const config: Config = {
   plugins: [
     // addTailwindColorVariables,
     plugin(function ({ addUtilities, addVariant }) {
-      // addVariant('hocus', ['&:hover', '&:focus']);
-      // addVariant('group-hocus', [
-      //   ':merge(.group):hover &',
-      //   ':merge(.group):focus &',
-      // ]);
-      // addVariant('peer-hocus', [
-      //   ':merge(.peer):hover ~ &',
-      //   ':merge(.peer):focus ~ &',
-      // ]);
       addVariant('hocusv', ['&:hover', '&:focus-visible']);
       addVariant('group-hocusv', [
         ':merge(.group):hover &',
