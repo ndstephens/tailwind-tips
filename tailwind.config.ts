@@ -4,6 +4,8 @@ import colors from 'tailwindcss/colors';
 import plugin from 'tailwindcss/plugin';
 import { addTailwindColorVariables } from './lib/utils/tailwindColorVars';
 
+const { transparent, current, white, black } = colors;
+
 const config: Config = {
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -16,10 +18,10 @@ const config: Config = {
   theme: {
     colors: {
       // ...colors,
-      transparent: 'transparent',
-      current: 'currentColor',
-      white: colors.white,
-      black: colors.black,
+      transparent,
+      current,
+      white,
+      black,
       gray: colors.slate,
       primary: colors.fuchsia,
       coffee: '#c0ffee',
