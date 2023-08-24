@@ -52,7 +52,7 @@
     @apply list-disc;
   }
   a {
-    @apply text-primary-300 rounded border-b-2 border-transparent p-0.5 transition-colors hocusv:border-current;
+    @apply rounded border-b-2 border-transparent p-0.5 text-primary-300 hover:transition-colors hocusv:border-current;
   }
   code {
     @apply rounded bg-gray-600 px-1 py-0.5;
